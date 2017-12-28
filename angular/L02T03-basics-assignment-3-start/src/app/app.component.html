@@ -10,12 +10,12 @@
         <li>Starting at the 5th log item, give all future log items a blue background (via ngStyle) and white color (ngClass)</li>
       </ol>
       <hr>
-      <button class="btn btn-default" (click)="onMostrarDetalhes()" >Mostrar Detalhes</button>
+      <button class="btn btn-primary" (click)="onMostrarDetalhes()" >Mostrar Detalhes</button>
       <p *ngIf = "mostrarDetalhes">A senha é xablau!!</p>
       <hr>
-      <p *ngFor = "let log of clickLog" 
-        [ngStyle]="{backgroundColor: getColor(log.count)}" 
-        [ngClass]="{whiteColor: log.count >= 5}">
+      <p *ngFor = "let log of clickLog; let i = index" 
+        [ngStyle]="{backgroundColor: getColor(i)}" 
+        [ngClass]="{'white-text': i >= 5}">
          Click nº {{log.count}} - {{log.time}}
       </p>
 
