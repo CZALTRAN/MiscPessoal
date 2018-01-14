@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.form = new FormGroup({
-      'projectName': new FormControl(null, [Validators.required], this.forbidenEmails.bind(this)),
+      'projectName': new FormControl(null, [Validators.required], this.invalidProjectNameAsync.bind(this)),
       'email': new FormControl(null, [Validators.required, Validators.email]),
       'projectStatus': new FormControl(null)
     });
@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
     return null;
   }
 
-  forbidenEmails(control: FormControl): Promise<any> {
+  invalidProjectNameAsync(control: FormControl): Promise<any> {
     const promise = new Promise<any>((resolve, reject) => {
       setTimeout(() => {
         if (control.value === 'Test') {
