@@ -5,6 +5,7 @@ import { Router } from "@angular/router";
 import * as fromApp from '../store/app.reducer'
 import * as fromAuth from '../auth/store/auth.reducers'
 import { Store } from "@ngrx/store";
+import 'rxjs/add/operator/take'
 
 @Injectable()
 export class AuthGuard implements CanActivate {

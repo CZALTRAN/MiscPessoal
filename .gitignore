@@ -213,3 +213,11 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+/Java JAX-SR/mobile-app-ws/target/
+/Java JAX-SR/library/target/
+/Java JAX-SR/TesteMultModulo/target/
+/Java JAX-SR/Maven Testes/ProjetoWeb/target/
+/Java JAX-SR/Maven Testes/libraryTeste/target/
+/Java JAX-SR/Nova pasta/ProjetoWeb/target/
+/Java JAX-SR/Nova pasta/libraryTeste/target/
+/Java JAX-SR/WildFlyAchetype/target/
