@@ -13,7 +13,8 @@ import { HttpRequest } from "@angular/common/http";
 
 @Injectable()
 export class DataStorageService {
-    constructor(private httpClient: HttpClient, private recipeServices: RecipeService,
+    constructor(private httpClient: HttpClient,
+         private recipeServices: RecipeService,
         private shoppingListService: ShoppingListService,
         private authService: AuthService
     ) { }
