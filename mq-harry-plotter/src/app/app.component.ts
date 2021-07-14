@@ -27,11 +27,11 @@ export class AppComponent implements OnInit {
   }
 
   generateFunction(): string {
-    return `${this.a}*x^4+${this.b}*x^3+${this.c}*x^2+${this.d}*x+${this.e}`;
+    return `${this.a}*x^4 + ${this.b}*x^3 + ${this.c}*x^2 + ${this.d}*x + ${this.e}`;
   }
 
   generateDerivada(): string {
-    return `4*${this.a}*x^3+3*${this.b}*x^2+2*${this.c}*x^1+${this.d}`;
+    return `${4*this.a}*x^3 + ${3*this.b}*x^2 + ${2*this.c}*x^1 + ${this.d}`;
   }
 
 
@@ -61,7 +61,8 @@ export class AppComponent implements OnInit {
           derivative: {
             fn: funcDx,
             updateOnMouseMove: true
-          }
+          },
+          graphType:"polyline"
         }
       ]
     });
