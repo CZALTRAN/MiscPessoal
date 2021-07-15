@@ -26,12 +26,21 @@ export class AppComponent implements OnInit {
     this.plotGraphic();
   }
 
+//¹²³⁴
+  generateFunctionReadable(): string {
+    return `${this.a}x⁴ + ${this.b}x³ + ${this.c}*x² + ${this.d}*x + ${this.e}`;
+  }
+
+  generateDerivadaReadable(): string {
+    return `${4 * this.a}x³ + ${3 * this.b}x² + ${2 * this.c}x + ${this.d}`;
+  }
+
   generateFunction(): string {
     return `${this.a}*x^4 + ${this.b}*x^3 + ${this.c}*x^2 + ${this.d}*x + ${this.e}`;
   }
 
   generateDerivada(): string {
-    return `${4*this.a}*x^3 + ${3*this.b}*x^2 + ${2*this.c}*x^1 + ${this.d}`;
+    return `${4 * this.a}*x^3 + ${3 * this.b}*x^2 + ${2 * this.c}*x^1 + ${this.d}`;
   }
 
 
@@ -62,7 +71,7 @@ export class AppComponent implements OnInit {
             fn: funcDx,
             updateOnMouseMove: true
           },
-          graphType:"polyline"
+          graphType: "polyline"
         }
       ]
     });
