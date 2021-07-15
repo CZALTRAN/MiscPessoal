@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
 
 //¹²³⁴
   generateFunctionReadable(): string {
-    return `${this.a}x⁴ + ${this.b}x³ + ${this.c}*x² + ${this.d}*x + ${this.e}`;
+    return `${this.a}x⁴ + ${this.b}x³ + ${this.c}x² + ${this.d}x + ${this.e}`;
   }
 
   generateDerivadaReadable(): string {
