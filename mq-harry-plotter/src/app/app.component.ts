@@ -61,8 +61,8 @@ export class AppComponent implements OnInit {
       disableZoom: false,
       width,
       height,
-      yAxis: {domain: [-5, 5]},
-      xAxis: {domain: [-10, 10]},
+      yAxis: {domain: [-10, 10]},
+      xAxis: {domain: [-20, 20]},
       grid: true,
       data: [
         {
