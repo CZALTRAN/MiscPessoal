@@ -1,0 +1,1 @@
+#qplot não funciona com scripts
