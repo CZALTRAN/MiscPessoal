@@ -1,0 +1,13 @@
+cat("ex a ----------------\n")
+foo <- c(4.3,2.2,NULL,2.4,NaN,3.3,3.1,NULL,3.4,NA)
+print(length(foo))
+print(which(is.na(foo)))
+print(is.null(foo))
+print(is.na(x=foo[8])+4/NULL)
+cat("\nex b ----------------\n")
+
+B = list(alpha = c(7,7,NA,3,NA,1,1,5,NA))
+print(B)
+print(is.null(B$beta))
+B$beta = which(is.na(B$alpha))
+print(B$beta)
