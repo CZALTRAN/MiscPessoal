@@ -8,3 +8,5 @@ seq(from=10,to=8,length=5)
 sort(decreasing=T,x=c(2,1,1,2,0.3,3,1.3))
 which(matrix(c(T,F,T,T),2,2))
 which(matrix(c(T,F,T,T),2,2),a=T)
+
+cat("\n\nex c ----------------\n")
