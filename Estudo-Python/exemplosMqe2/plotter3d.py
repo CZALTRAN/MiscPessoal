@@ -52,6 +52,8 @@ def curvaNivel(X,Y,Z,levels):
     fig = plt.figure()
     ax = fig.add_subplot()
     curva = ax.contourf(X,Y,Z,levels)
+    #curva.cmap.set_under('white')
+    #curva.cmap.set_over('cyan')
     fig.colorbar(curva)
     plt.show()
 
