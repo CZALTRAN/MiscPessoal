@@ -9,9 +9,11 @@ def exemplo8xA():
     Y = np.arange(-10, 10, .1)
     X, Y = np.meshgrid(X, Y)
     Z = X + Y**2
-    curvaNivel(X, Y, Z, [-1, 0, 1, 2, 3, 4])
+    curvaNivel(X, Y, Z, [-1, 0, 1, 2, 3, 4, 5, 6, 7])
+    curvaNivel(X, Y, Z, np.arange(-1, 8, 0.2))
 
-# exemplo8xA()
+
+exemplo8xA()
 
 
 def exemplo8xB():
@@ -20,7 +22,8 @@ def exemplo8xB():
     X, Y = np.meshgrid(X, Y)
     Z = log(X**2 + Y**2)
     curvaNivel(X, Y, Z, [0, 1, 2, 3])
-# exemplo8xB()
+    curvaNivel(X, Y, Z, np.arange(-4,4,0.1))
+exemplo8xB()
 
 
 def exemplo8xC():
@@ -28,8 +31,9 @@ def exemplo8xC():
     Y = np.arange(-5, 5, .1)
     X, Y = np.meshgrid(X, Y)
     Z = 2*X + 3*Y
-    curvaNivel(X, Y, Z, [0, 6, 80])
-# exemplo8xC()
+    curvaNivel(X, Y, Z, [0, 1,2,3,4,5,6,15])
+    curvaNivel(X, Y, Z, np.arange(0,20,0.5))
+exemplo8xC()
 
 
 def exemplo8xD():
@@ -37,8 +41,9 @@ def exemplo8xD():
     Y = np.arange(-5, 5, .1)
     X, Y = np.meshgrid(X, Y)
     Z = X * Y
-    curvaNivel(X, Y, Z, [1, 4, 80])
-# exemplo8xD()
+    #curvaNivel(X, Y, Z, [1, 4, 80])
+    curvaNivel(X, Y, Z, np.arange(-15,15,1))
+#exemplo8xD()
 
 
 def exemplo8xE():
@@ -46,10 +51,11 @@ def exemplo8xE():
     Y = np.arange(-2, 8, .1)
     X, Y = np.meshgrid(X, Y)
     Z = Y-X**2
-    curvaNivel(X, Y, Z, [2, 4, 80])
+    curvaNivel(X, Y, Z, np.arange(0,5,1))
+    curvaNivel(X, Y, Z, np.arange(0,5,0.1))
 
 
-# exemplo8xE()
+exemplo8xE()
 
 
 def exemplo8xF():
@@ -104,7 +110,8 @@ def exemplo12():
     X, Y = np.meshgrid(X, Y)
     Z = 100*X + 64*Y - 0.01*X**2 - 0.25*Y**2
     curvaNivel(X, Y, Z, [-1*fatorNiveis, 0*fatorNiveis, 1*fatorNiveis,
-               2*fatorNiveis, 2.5*fatorNiveis, 3*fatorNiveis ])
+                         2*fatorNiveis, 2.5*fatorNiveis, 3*fatorNiveis])
+    curvaNivel(X, Y, Z, np.arange(-100_000, 300_000, 1000))
 
 
-exemplo12()
+#exemplo12()

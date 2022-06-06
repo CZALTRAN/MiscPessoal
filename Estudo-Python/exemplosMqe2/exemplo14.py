@@ -10,6 +10,7 @@ def exemplo2x1():
 
     plot3D(X, Y, Z)
 
+#exemplo2x1()
 
 def exemplo2x2():
     X = np.arange(-2, 2, 0.01)

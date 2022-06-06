@@ -1,6 +1,6 @@
-from matplotlib.pyplot import plot
 from numpy import inf, sqrt
 from plotter3d import *
+import matplotlib.pyplot as plt
 
 
 def exemplo4():
@@ -8,9 +8,7 @@ def exemplo4():
     Y = [2, -3, -3,  2, 3, 4, 0]
     Z = [3,  1,  2, -3, 0, 3, 4]
     plotPontos3D(X, Y, Z)
-
-
-# exemplo4()
+#exemplo4()
 
 
 def exemplo5():
@@ -27,7 +25,7 @@ def exemplo6x1():
     X, Y = np.meshgrid(X, Y)
     Z = (2*X+4*Y-8)/-3
     plot3D(X, Y, Z)
-# exemplo6x1()
+#exemplo6x1()
 
 
 def exemplo6x2():
@@ -37,7 +35,7 @@ def exemplo6x2():
     Z = sqrt((4*X**2 - Y**2 - 100)/-25)
     # limitZ(Y,10)
     plot3D(X, Y, Z, 8, True)
-# exemplo6x2()
+#exemplo6x2()
 
 
 def exemplo6x3():
@@ -47,7 +45,7 @@ def exemplo6x3():
     Z = sqrt((9-X**2 - Y**2))
     # limitZ(Y,10)
     plot3D(X, Y, Z, 8, True)
-# exemplo6x3()
+#exemplo6x3()
 
 
 def exemplo7xA():
@@ -56,7 +54,7 @@ def exemplo7xA():
     X, Y = np.meshgrid(X, Y)
     Z = X + Y + 1
     plot3D(X, Y, Z, 1)
-# exemplo7xA()
+exemplo7xA()
 
 
 def exemplo7xB():
@@ -65,7 +63,7 @@ def exemplo7xB():
     X, Y = np.meshgrid(X, Y)
     Z = X**2 + Y**2
     plot3D(X, Y, Z, 8)
-#exemplo7xB()
+exemplo7xB()
 
 def exemplo7xC():
     X = np.arange(-10, 10, .1)
@@ -73,7 +71,7 @@ def exemplo7xC():
     X, Y = np.meshgrid(X, Y)
     Z = sqrt(X**2 + 25 - Y**2)
     plot3D(X, Y, Z, 8, True)
-#exemplo7xC()
+exemplo7xC()
 
 def exemplo7xD():
     X = np.arange(-6, 6, .1)
@@ -82,3 +80,6 @@ def exemplo7xD():
     Z = sqrt(36 - X**2 - Y**2)
     plot3D(X, Y, Z, 8, True)
 exemplo7xD()
+
+
+plt.show()

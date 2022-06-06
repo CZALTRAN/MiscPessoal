@@ -25,8 +25,7 @@ def plot3D(X, Y, Z, proporcao=1, espelharZ = False):
         surf = ax.plot_surface(X, Y, -Z, facecolors=colorsArray, linewidth=0)
     #surf = ax.plot_wireframe(X, Y, Z, linewidth=1)
 
-    # ax.w_zaxis.set_major_locator(LinearLocator(6))
-    plt.show()
+    #plt.show()
 
 def limitZ(Z, limit = 10):
     for i in range(len(Z)):
@@ -52,6 +51,8 @@ def curvaNivel(X,Y,Z,levels):
     fig = plt.figure()
     ax = fig.add_subplot()
     curva = ax.contourf(X,Y,Z,levels)
+    ax.set_xlabel('X')
+    ax.set_ylabel('Y')
     #curva.cmap.set_under('white')
     #curva.cmap.set_over('cyan')
     fig.colorbar(curva)
